@@ -1,8 +1,11 @@
+
+
 import * as React from "react"
 const {PureComponent} = React;
 import RealtimeEchartComponent,{orderProps as IRealProps}from '../../component/BaseRealtimeEchartComponent/RealtimeEchartComponent'
 import * as moment from 'moment'
 import '../../asset/theme/china'
+
 interface orderProps extends IRealProps{
   
 }

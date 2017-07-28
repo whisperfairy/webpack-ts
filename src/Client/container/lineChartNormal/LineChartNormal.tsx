@@ -2,7 +2,7 @@
 import * as React from "react"
 const {PureComponent} = React;
 import RealtimeEchartComponent,{orderProps as IRealProps}from '../../component/RealtimeEchartComponent/RealtimeEchartComponent'
-import * as moment from 'moment'
+import * as Moment from 'moment'
 interface orderProps extends IRealProps{
   
 }
@@ -27,6 +27,7 @@ class LinechartNormal extends PureComponent<orderProps,orderState>{
     }
     getOption(props) { 
         const {} = props;
+        let now=Moment();
         var option = {
             title: {
                 text: 'ECharts init'

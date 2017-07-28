@@ -55,6 +55,7 @@ var baseConfig = {
             name: ['vendor', 'manifest'] ,
             minChunks: Infinity
         }),
+        new webpack.optimize.ModuleConcatenationPlugin()
     ]
 
 
@@ -95,9 +96,9 @@ var PROD_Config =merge(baseConfig,{
     plugins:[
         new webpack.DefinePlugin({
             //判断当前是否处于开发状态
-            __DEV__: JSON.stringify(true),
+            __DEV__: JSON.stringify(false),
         }),
-          new ExtractTextPlugin({filename:'assets/styles/[name]_[hash].bundle.css', allChunks: true}),
+        new ExtractTextPlugin({filename:'assets/styles/[name]_[hash].bundle.css', allChunks: true}),
         new webpack.optimize.UglifyJsPlugin(), //最小化一切
         new webpack.optimize.AggressiveMergingPlugin(),//合并块
         new HtmlWebpackPlugin()
@@ -139,6 +140,10 @@ const DEV_Config=merge(baseConfig, {
         ]
     },
     plugins:[
+        new webpack.DefinePlugin({
+            //判断当前是否处于开发状态
+            __DEV__: JSON.stringify(true),
+        }),
         new webpack.HotModuleReplacementPlugin(),
         //activates HMR
         new webpack.NamedModulesPlugin(),

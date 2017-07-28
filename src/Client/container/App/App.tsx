@@ -13,7 +13,7 @@ interface orderProps{
 interface orderState{
 
 }
-export default class App extends PureComponent <orderProps,orderState>{
+export default class App extends PureComponent {
     constructor(props:orderProps) {
         super(props);
         console.log('App' + 'constructor' + arguments);
