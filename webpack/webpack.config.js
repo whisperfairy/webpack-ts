@@ -146,7 +146,8 @@ const DEV_Config=merge(baseConfig, {
         }),
         new webpack.HotModuleReplacementPlugin(),
         //activates HMR
-        new webpack.NamedModulesPlugin(),
+        new webpack.NamedModulesPlugin()
+
         //prints more readanpmble module names in the browser console on HMR updates
         // new ExtractTextPlugin({filename:path.join(config.dirname,'dist','bundle.css'), allChunks: true})
     ],
