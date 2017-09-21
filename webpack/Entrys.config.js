@@ -8,8 +8,8 @@
  * @内容 作用
  */
 const path = require('path');
-const {Environment:EnumEnv,config} = require('../config/config');
+const {Environment,config} = require('../config/config');
 module.exports.Entrys={
     client:path.resolve(config.appDir,'index.tsx'),
-    vendor: ['moment','react','react-router-dom','react-dom','axios']
+    vendor: ['moment','redux','react','react-router-dom','react-dom','axios']
 }

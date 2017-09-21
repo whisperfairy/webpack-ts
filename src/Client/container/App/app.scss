@@ -1,25 +1,21 @@
 /**
  *
- * app.scss 文件作用
+ * App.scss 文件作用
  * @author hurong<353486474@QQ.COM>
- * @date 2017/3/24
+ * @date 
  *
  * @内容 作用
  * @内容 作用 
  */
-
-div.Chart_List {
-  min-height: 100vh;
-  width: 100%;
-  background-color: #404040;
+@import '../../asset/styles/style.scss';
+html,body{
+  height: 100%;
+  min-height: 768px;
+  min-width: 1200px;
+  background-color: $nfe-paper-bg;
+}
+div[data-reactroot] {
+  height: auto;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  .charts_flex {
-    width: 30%;
-    height: 50vh;
-    margin: 30px 0 0 0;
-    background-color: darkgray
-  }
 }

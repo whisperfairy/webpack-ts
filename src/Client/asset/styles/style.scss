@@ -1,8 +1,107 @@
-@import "constant";
-html,body{
-  height: 100%;
-}
-div.app{
-  height: 100%;
-  width: 100%;
-}
+/**
+ *
+ * style.scss 项目主样式表，确定项目基调全局样式
+ * @author 胡戎<353486474@QQ.COM>
+ * @date 2016-12-9
+ *
+ *
+ *
+ */
+@import 'variables/colors';
+@import 'variables/box_padding_margin';
+@import 'variables/typography';
+//
+/* Position*/
+
+
+
+//
+/* BoxModel */
+
+/* Padding */
+
+$padding-base: $padding-base-vertical $padding-base-horizontal;
+$padding-round: $padding-round-vertical $padding-round-horizontal;
+//
+/* Typography*/
+/* Font*/
+$font-family: $nfe-font-family;
+$font-size-base:$nfe-font-size-base;
+$font-size-large:$nfe-font-size-large;
+$font-weight-normal:$nfe-font-weight-normal;
+$text-color-light:$nfe-text-color-light;
+$text-color-light-hex: $nfe-text-color-light-hex; // for hover
+$text-color-primary: $nfe-text-color-primary;
+$text-color-primary-hex: $nfe-text-color-primary-hex ;// for hover
+$icon-color: $nfe-icon-color;
+$label-color: $nfe-label-color;
+$label-color-toggle-focus: $nfe-label-color-toggle-focus;
+
+//* Visual */
+/* DefaultColor */
+$white-color: #FFFFFF !default;
+
+$gray-color:  #999999 !default;
+
+$primary-color: $nfe-primary-color !default;
+$success-color: $nfe-success-color!default;
+$danger-color: $red !default;
+$warning-color: $yellow !default;
+$info-color: $nfe-info-color !default;
+$rose-color: $pink !default;
+
+/* Custom color*/
+$new-blue:            #1DC7EA;
+$new-purple:          #9368E9;
+$new-red:             #FB404B;
+$new-green:           #87CB16;
+$new-orange:          #FFA534;
+$new-dark-blue:       #1F77D0;
+$new-black:           #5e5e5e;
+
+/* light colors 用于hover*/
+$light-primary:                 rgba($primary-color, .2);
+$light-info:                rgba($info-color, .2);
+$light-success:                rgba($success-color, .2);
+$light-warning:               rgba($warning-color, .2);
+$light-danger:                  rgba($danger-color, .2);
+/* filter colors 用于选中 */
+$filter-blue:         darken($primary-color, 10%);
+$filter-azure:        darken($info-color, 10%);
+$filter-green:        darken($success-color, 10%);
+$filter-orange:       darken($warning-color, 10%);
+$filter-red:          darken($danger-color, 10%);
+/* Border*/
+
+$border-radius-base: 3px !default;
+$border-radius-small: 2px !default;
+$border-radius-huge: 10px !default;
+$border-radius-extreme: 30px !default;
+
+
+/*Shadow*/
+
+$fancy-shadow: 0 13px 39px -10px rgba(0, 0, 0, 0.65), 0 1px 25px 0px rgba(0, 0, 0, 0.15);
+//
+/* Misc*/
+$nfe-shadow-key-umbra-opacity: 0.2 !default;
+$nfe-shadow-key-penumbra-opacity: 0.14 !default;
+$nfe-shadow-ambient-shadow-opacity: 0.12 !default;
+
+
+$general-transition-time:  300ms !default;
+
+$slow-transition-time:           370ms !default;
+$fast-transition-time:           150ms !default;
+
+$transition-linear:                                   linear !default;
+$transition-bezier:         cubic-bezier(0.34, 1.61, 0.7, 1) !default;
+$transition-ease:           ease 0s;
+
+//---
+// Converted bs variables
+
+// Bootstrap brand color customization
+
+
+/* SHADOWS Animation */

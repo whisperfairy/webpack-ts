@@ -2,19 +2,19 @@
     "compilerOptions": {
         "outDir": "./built/",
         "sourceMap": true,
-        "moduleResolution": "Node",
+        "moduleResolution": "node",
         "emitDecoratorMetadata": true,
         "experimentalDecorators": true,
         "noImplicitAny": false,
         "target": "es6",
-        "jsx": "react"
+        "allowSyntheticDefaultImports":true,
+        "allowJs": false
     },
-
-    "files": [
-        "./declarations.d.ts",
-        "./src/**/*.tsx?"
+    "include": [
+        "./src/**/*"
     ],
     "exclude": [
-        "node_modules"
+        "node_modules",
+        "./src/Server/*"
     ]
 }

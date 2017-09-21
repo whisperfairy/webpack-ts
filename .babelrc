@@ -1,0 +1,19 @@
+{
+  "presets": [["env", {
+    "targets": {
+      "browsers": ["last 2 versions", "firefox >= 43"]
+    },
+    "modules": false,
+    "loose": true
+  }],"stage-3",
+    "react"
+  ],
+  "plugins": [
+    "transform-decorators-legacy",
+    "transform-class-properties",
+    "transform-runtime",
+    "async-to-promises",
+    "transform-flow-strip-types",
+    ["import",{"libraryName": "antd" ,"style":"css"}]
+  ]
+}
