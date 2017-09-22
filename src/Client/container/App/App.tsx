@@ -5,14 +5,23 @@
 import React, {PureComponent} from 'react'
 import Slider from '../../component/NavBarContainer/SliderComponent'
 import Content from '../content/ContentContainer'
+import {BrowserRouter,Route}from 'react-router-dom'
 import './App.scss'
 class App extends PureComponent<any,any> {
     render() {
         return (
-            <div>
-                <Slider></Slider>
-                <Content></Content>
-            </div>
+            <BrowserRouter>
+                <Route path={'/'}
+                render={()=>{
+                    return (
+                        <div>
+                            <Slider></Slider>
+                            <Content></Content>
+                        </div>
+                    )
+                }}></Route>
+
+            </BrowserRouter>
         )
     }
 }
