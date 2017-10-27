@@ -10,6 +10,6 @@
 const path = require('path');
 const {Environment,config} = require('../config/config');
 module.exports.Entrys={
-    client:path.resolve(config.appDir,'index.tsx'),
-    vendor: ['moment','redux','react','react-router-dom','react-dom','axios']
+    client:path.resolve(config.ClientDir,'index.tsx'),
+    vendor: ['moment','redux','react-redux','react','react-router-dom','react-dom','axios','echarts']
 }

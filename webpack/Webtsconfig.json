@@ -2,6 +2,7 @@
     "compilerOptions": {
         "outDir": "./built/",
         "sourceMap": true,
+        "module": "ES6",
         "moduleResolution": "Node",
         "emitDecoratorMetadata": true,
         "experimentalDecorators": true,
@@ -11,13 +12,16 @@
         "allowSyntheticDefaultImports":true,
         "allowJs": true
     },
-
+    "awesomeTypescriptLoaderOptions": {
+        "useWebpackText": true,
+        "forkChecker": true
+    },
     "include": [
-        "./src/**/*"
-
+        "../src/Client/**/*",
+        "../typing/declarations.d.ts"
     ],
     "exclude": [
         "node_modules",
-        "./src/Server/*"
+        "../src/Server/**/*"
     ]
 }

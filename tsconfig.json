@@ -2,6 +2,8 @@
     "compilerOptions": {
         "outDir": "./built/",
         "sourceMap": true,
+        "module": "commonjs",
+        "types":["node"],
         "moduleResolution": "node",
         "emitDecoratorMetadata": true,
         "experimentalDecorators": true,
@@ -12,10 +14,10 @@
         "allowJs": false
     },
     "include": [
-        "./src/**/*"
+        "./src/**/*",
+        "./typing/declarations.d.ts"
     ],
     "exclude": [
-        "node_modules",
-        "./src/Server/*"
+        "node_modules"
     ]
 }
