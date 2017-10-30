@@ -18,7 +18,7 @@
     },
     "include": [
         "../src/Client/**/*",
-        "../typing/declarations.d.ts"
+        "../typings/declarations.d.ts"
     ],
     "exclude": [
         "node_modules",
